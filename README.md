@@ -4,7 +4,7 @@
   </a>
 </div>
 
-<div align="center">
+<div>
   <p>
     This starter template includes the following technologies:
   </p>
