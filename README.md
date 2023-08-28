@@ -15,7 +15,8 @@
 You can clone & create this repo with the following command
 
 ```bash
-git clone https://github.com/DaQMinh/nextjs-starter.git && cd nextjs-starter
+git clone https://github.com/DaQMinh/nextjs-starter.git
+cd nextjs-starter
 ```
 
 ## Getting Started
