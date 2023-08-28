@@ -1,7 +1,5 @@
 <div align="center">
-  <a href="https://nextjs-postgres-auth.vercel.app/">
-    <h3>Next.js Starter</h3>
-  </a>
+    <h2>Next.js Starter</h2>
 </div>
 
 <div>
@@ -12,7 +10,7 @@
     <li>CSS Framework - Tailwind CSS</li>
     <li>Components Framework - Shadcn/UI</li>
     <li>Authentication - Auth.js</li>
-    <li>Database - PostgreSQL with Prisma</li>
+    <li>Database - Prisma</li>
   </ul>
 </div>
 
@@ -26,16 +24,11 @@ cd nextjs-starter
 ```
 
 ## Getting Started
-First, Install package
+First, Install dependencies and then run dev script
 ```bash
-npm install
-# or
 yarn install
-```
-then, run the development server:
-
-```bash
-npm run dev
-# or
 yarn dev
 ```
+
+
+
