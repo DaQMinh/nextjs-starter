@@ -6,7 +6,10 @@
 
 <p align="center">
 <br/>
-
+- CSS Framework - Tailwind Css
+- Components Framework - Shadcn/UI
+- Authentication  - Auth.js
+- Database - Postgresql Prisma
 ## Developing Locally
 
 You can clone & create this repo with the following command
