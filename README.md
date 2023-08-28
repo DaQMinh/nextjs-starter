@@ -1,18 +1,24 @@
-<p align="center">
+<div align="center">
   <a href="https://nextjs-postgres-auth.vercel.app/">
-    <h3 align="center">Next.js Starter</h3>
+    <h3>Next.js Starter</h3>
   </a>
-</p>
+</div>
 
-<p align="center">
-<br/>
--  CSS Framework - Tailwind Css
--  Components Framework - Shadcn/UI
--  Authentication  - Auth.js
--  Database - Postgresql Prisma
+<div align="center">
+  <p>
+    This starter template includes the following technologies:
+  </p>
+  <ul>
+    <li>CSS Framework - Tailwind CSS</li>
+    <li>Components Framework - Shadcn/UI</li>
+    <li>Authentication - Auth.js</li>
+    <li>Database - PostgreSQL with Prisma</li>
+  </ul>
+</div>
+
 ## Developing Locally
 
-You can clone & create this repo with the following command
+To clone and set up this repository, use the following commands:
 
 ```bash
 git clone https://github.com/DaQMinh/nextjs-starter.git
