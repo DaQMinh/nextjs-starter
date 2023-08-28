@@ -3,10 +3,14 @@ import { withAuth, NextRequestWithAuth } from "next-auth/middleware"
 import { NextResponse } from "next/server"
 
 export default withAuth(
+    // `withAuth` augments your `Request` with the user's token.
     function middleware(request: NextRequestWithAuth) {
-        if (request.nextauth.token?.role !== "Admin") {
+        // console.log(request.nextUrl.pathname)
+        // console.log(request.nextauth.token)
+
+        if (request.nextauth.token?.role !== 'Admin') {
             return NextResponse.rewrite(
-                new URL("/misc/denied", request.url)
+                new URL("/denied", request.url)
             )
         }
     },
@@ -15,11 +19,8 @@ export default withAuth(
             authorized: ({ token }) => !!token
         },
     }
-    
 )
 
 // Applies next-auth only to matching routes - can be regex
 // Ref: https://nextjs.org/docs/app/building-your-application/routing/middleware#matcher
-export const config = {
-  matcher: '/dashboard',
-}
+export const config = { matcher: ["/dashboard"] }
