@@ -1,6 +1,14 @@
-<div align="center">
-    <h2>Next.js Starter</h2>
-</div>
+# next-starter
+
+A Next.js 13 template for building apps with NextAuth and Shadcn/ui
+
+## Usage
+
+```bash
+npx create-next-app -e https://github.com/DaQMinh/nextjs-starter
+```
+
+## Features
 
 <div>
   <p>
@@ -14,21 +22,6 @@
   </ul>
 </div>
 
-## Developing Locally
+## License
 
-To clone and set up this repository, use the following commands:
-
-```bash
-git clone https://github.com/DaQMinh/nextjs-starter.git
-cd nextjs-starter
-```
-
-## Getting Started
-First, Install dependencies and then run dev script
-```bash
-yarn install
-yarn dev
-```
-
-
-
+Licensed under the MIT license
