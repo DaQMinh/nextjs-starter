@@ -1,11 +1,12 @@
 'use client'
 import Link from "next/link"
-import { useSession } from "next-auth/react"
-import { siteConfig } from "@/config/site"
-import { buttonVariants } from "@/components/ui/button"
+import { Button, buttonVariants } from "@/components/ui/button"
+import { useSession, signIn, signOut } from "next-auth/react"
+import { useState } from "react"
 
 export default function IndexPage() {
   const { data: session } = useSession()
+
   return (
     <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
       <div className="flex max-w-[980px] flex-col items-start gap-2">
@@ -19,24 +20,29 @@ export default function IndexPage() {
         </p>
       </div>
       <div className="flex gap-4">
-        <Link
-          href={siteConfig.links.docs}
-          target="_blank"
-          rel="noreferrer"
-          className={buttonVariants()}
-        >
-          Documentation
-        </Link>
-        <Link
-          target="_blank"
-          rel="noreferrer"
-          href={siteConfig.links.github}
-          className={buttonVariants({ variant: "outline" })}
-        >
-          GitHub
-        </Link>
-        {session?.user.email}
+      {   session ? (
+        <>
+            <Button
+            variant={'outline'}
+            onClick={() => signIn()}
+            >
+                Logout
+            </Button>
+            <h1>
+              Sign In as {session.user.email}
+            </h1>
+        </>
+          ) : (
+            <Button
+            variant={'outline'}
+            onClick={() => signIn()}
+            >
+                Login
+            </Button>
+          )
+        }
       </div>
     </section>
   )
 }
+
