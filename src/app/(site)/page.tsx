@@ -28,9 +28,10 @@ export default function IndexPage() {
             >
                 Logout
             </Button>
-            <h1>
-              Sign In as {session.user.email}
-            </h1>
+
+        <p className="max-w-[700px] text-lg text-muted-foreground">
+           Sign In as {session.user.email}
+        </p>
         </>
           ) : (
             <Button
