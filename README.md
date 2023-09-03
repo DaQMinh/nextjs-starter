@@ -5,7 +5,7 @@ A Next.js 13 template for building apps with NextAuth and Shadcn/ui
 ## Usage
 
 ```bash
-npx create-next-app -e https://github.com/DaQMinh/nextjs-starter
+npx create-next-app -e https://github.com/DaQMinh/nextjs-starter/tree/with-shadcn/ui
 ```
 
 ## Features
