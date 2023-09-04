@@ -36,7 +36,7 @@ export default function IndexPage() {
           ) : (
             <Button
             variant={'outline'}
-            onClick={() => signIn()}
+            onClick={() => signOut()}
             >
                 Login
             </Button>
